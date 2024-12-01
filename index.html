@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      /*
+      Write your CSS here
+      Gap Colour: #000
+      White: #F0F1EC
+      Red: #E72F24
+      Black: #232629
+      Blue: #004592
+      Yellow: #F9D01E
+
+      For dimensions, see dimensions.png image.
+      HINT: Remember you can't change the properties of grid lines.
+      But grid lines are transparent!
+      */
+      /* CENTER USING GRID */
+      /* body {
+        margin: 0; 
+        height: 100vh; 
+        display: grid; 
+        place-items: center; 
+        background-color: #f0f1ec; 
+      } */
+
+      /* CENTER USING FLEX */
+
+      body {
+        margin: 0; /* Remove default margin */
+        height: 100vh; /* Set the height to the full viewport */
+        display: flex; /* Enable flexbox */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        background-color: #f0f1ec; /* Optional: Add a background color for visibility */
+      }
+
+      .container {
+        background-color: black;
+        width: 748px;
+        display: grid;
+        grid-template-columns: 320px 198px 153px 50px;
+        grid-template-rows: 414px 130px 155px 20px;
+        gap: 9px;
+        /* place-items: center; */
+      }
+
+      .card1 {
+        background-color: red;
+      }
+
+      .card2 {
+        background-color: #f0f1ec;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 5;
+      }
+
+      .card3 {
+        background-color: #f0f1ec;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+      }
+
+      .card4 {
+        background-color: #f0f1ec;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 4;
+      }
+
+      .card5 {
+        background-color: #004592;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 4;
+        grid-column-end: 5;
+      }
+
+      .card6 {
+        background-color: #f0f1ec;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        grid-column-start: 4;
+        grid-column-end: 5;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .flexcontainer {
+        background-color: black;
+        height: 10px;
+      }
+
+      .card7 {
+        background-color: #f0f1ec;
+      }
+
+      .card8 {
+        background-color: #f9d01e;
+      }
+
+      .card9 {
+        background-color: #232629;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Write your HTML here -->
+    <div class="container">
+      <div class="card1"></div>
+      <div class="card2"></div>
+      <div class="card3"></div>
+      <div class="card4"></div>
+      <div class="card5"></div>
+      <div class="card6">
+        <div class="flexcontainer"></div>
+      </div>
+      <div class="card7"></div>
+      <div class="card8"></div>
+      <div class="card9"></div>
+    </div>
+  </body>
+</html>
